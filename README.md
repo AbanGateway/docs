@@ -110,7 +110,7 @@ flowchart TD
 
 ### 🤖 ربات فروشگاهی دارم
 
-[اتصال DDbot](integrations/ddbot.md)
+[DDbot](integrations/ddbot.md) · [میرزا](integrations/mirza.md)
 
 </td>
 <td width="25%" valign="top">
@@ -156,6 +156,7 @@ flowchart TD
 |---|---|
 | [ووکامرس](integrations/woocommerce.md) | نصب، تنظیمات، وضعیت سفارش، عیب‌یابی |
 | [DDbot](integrations/ddbot.md) | ربات فروشگاهی تلگرام، بدون نصب چیزی روی سرور شما |
+| [میرزا](integrations/mirza.md) | ربات میرزا، به‌عنوان درگاه سفارشی |
 | [لینک پرداخت](integrations/payment-links.md) | بدون کد، برای فروش در اینستاگرام و تلگرام |
 | [اپ فورواردر](integrations/forwarder-app.md) | همان چیزی که پیامک بانک را می‌رساند |
 
