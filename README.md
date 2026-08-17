@@ -108,6 +108,10 @@ flowchart TD
 
 [افزونه‌ی رسمی](integrations/woocommerce.md)
 
+### 🤖 ربات فروشگاهی دارم
+
+[اتصال DDbot](integrations/ddbot.md)
+
 </td>
 <td width="25%" valign="top">
 
@@ -151,6 +155,7 @@ flowchart TD
 | صفحه | چه چیزی |
 |---|---|
 | [ووکامرس](integrations/woocommerce.md) | نصب، تنظیمات، وضعیت سفارش، عیب‌یابی |
+| [DDbot](integrations/ddbot.md) | ربات فروشگاهی تلگرام، بدون نصب چیزی روی سرور شما |
 | [لینک پرداخت](integrations/payment-links.md) | بدون کد، برای فروش در اینستاگرام و تلگرام |
 | [اپ فورواردر](integrations/forwarder-app.md) | همان چیزی که پیامک بانک را می‌رساند |
 
