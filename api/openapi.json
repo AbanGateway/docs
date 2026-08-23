@@ -505,6 +505,17 @@
             ],
             "title": "Iban"
           },
+          "account_number": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Account Number"
+          },
           "payment_url": {
             "type": "string",
             "title": "Payment Url"
@@ -544,6 +555,7 @@
           "card_holder",
           "card_last4",
           "iban",
+          "account_number",
           "payment_url",
           "expires_at",
           "paid_at",
