@@ -131,7 +131,7 @@ flowchart TD
 
 ### 🤖 ربات فروشگاهی دارم
 
-[DDbot](integrations/ddbot.md) · [میرزا](integrations/mirza.md) · [فاکسیما](integrations/faoxima.md)
+[DDbot](integrations/ddbot.md) · [میرزا آپدیت‌شده](integrations/mirza-pro.md) · [میرزا قدیمی](integrations/mirza.md) · [فاکسیما](integrations/faoxima.md)
 
 </td>
 <td width="25%" valign="top">
@@ -177,7 +177,8 @@ flowchart TD
 |---|---|
 | [ووکامرس](integrations/woocommerce.md) | نصب، تنظیمات، وضعیت سفارش، عیب‌یابی |
 | [DDbot](integrations/ddbot.md) | ربات فروشگاهی تلگرام، بدون نصب چیزی روی سرور شما |
-| [میرزا](integrations/mirza.md) | ربات میرزا، به‌عنوان درگاه سفارشی |
+| [میرزا آپدیت‌شده](integrations/mirza-pro.md) | آبان گیت وی داخل خود ربات؛ یک آدرس و یک کلید |
+| [میرزا قدیمی](integrations/mirza.md) | نسخه‌های قدیمی‌تر، به‌عنوان درگاه سفارشی |
 | [فاکسیما](integrations/faoxima.md) | ربات فاکسیما روی سرور خودتان، با نصب‌کننده‌ی یک‌دستوری |
 | [لینک پرداخت](integrations/payment-links.md) | بدون کد، برای فروش در اینستاگرام و تلگرام |
 | [اپ فورواردر](integrations/forwarder-app.md) | همان چیزی که پیامک بانک را می‌رساند |
