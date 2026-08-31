@@ -11,6 +11,7 @@
 [![website](https://img.shields.io/badge/website-abangateway.ir-1F6FEB?style=for-the-badge)](https://abangateway.ir)
 [![status](https://img.shields.io/badge/status-live-0f7a4d?style=for-the-badge)](https://abangateway.ir/status)
 [![API](https://img.shields.io/badge/API-v1-27E0FF?style=for-the-badge)](api/README.md)
+[![Google Play](https://img.shields.io/badge/Google_Play-install-3DDC84?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=ir.abangateway.forwarder)
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-plugin-7F54B3?style=for-the-badge&logo=woocommerce&logoColor=white)](integrations/woocommerce.md)
 [![Telegram](https://img.shields.io/badge/Telegram-@Abangw__bot-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Abangw_bot)
 [![Channel](https://img.shields.io/badge/Channel-@abangateway-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/abangateway)
@@ -131,7 +132,7 @@ flowchart TD
 
 ### 🤖 ربات فروشگاهی دارم
 
-[DDbot](integrations/ddbot.md) · [میرزا آپدیت‌شده](integrations/mirza-pro.md) · [میرزا قدیمی](integrations/mirza.md) · [فاکسیما](integrations/faoxima.md)
+[DDbot](integrations/ddbot.md) · [میرزا آپدیت‌شده](integrations/mirza-pro.md) · [میرزا قدیمی](integrations/mirza.md) · [فاکسیما](integrations/faoxima.md) · [ویزویز](integrations/wizwiz.md)
 
 </td>
 <td width="25%" valign="top">
@@ -180,8 +181,9 @@ flowchart TD
 | [میرزا آپدیت‌شده](integrations/mirza-pro.md) | آبان گیت وی داخل خود ربات؛ یک آدرس و یک کلید |
 | [میرزا قدیمی](integrations/mirza.md) | نسخه‌های قدیمی‌تر، به‌عنوان درگاه سفارشی |
 | [فاکسیما](integrations/faoxima.md) | ربات فاکسیما روی سرور خودتان، با نصب‌کننده‌ی یک‌دستوری |
+| [ویزویز](integrations/wizwiz.md) | ربات ویزویز روی سرور خودتان، جای درگاه NowPayments |
 | [لینک پرداخت](integrations/payment-links.md) | بدون کد، برای فروش در اینستاگرام و تلگرام |
-| [اپ فورواردر](integrations/forwarder-app.md) | همان چیزی که پیامک بانک را می‌رساند |
+| [اپ فورواردر](integrations/forwarder-app.md) | همان چیزی که پیامک بانک را می‌رساند — گوگل پلی یا دانلود مستقیم |
 
 </div>
 

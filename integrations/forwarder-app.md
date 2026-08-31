@@ -4,9 +4,19 @@
 
 ## نصب
 
-از پنل یا ربات دانلودش کنید. روی سایت هم هست: `abangateway.ir/download`.
+دو راه، و هر دو می‌مانند:
+
+[![Google Play](https://img.shields.io/badge/Google_Play-install-3DDC84?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=ir.abangateway.forwarder)
+
+**از گوگل پلی** اگر گوشی‌تان دارد — به‌روزرسانی خودش می‌آید و هشدار «برنامه ناشناس» نمی‌بینید:
+<https://play.google.com/store/apps/details?id=ir.abangateway.forwarder>
+
+**دانلود مستقیم** اگر گوشی گوگل پلی ندارد یا باز نمی‌شود — از پنل، از ربات، یا `abangateway.ir/download`. همان اپ است و هیچ فرقی نمی‌کند.
 
 هر نسخه SHA-256 دارد و اپ قبل از نصب آپدیت، فایل دانلودشده را با آن می‌سنجد. می‌توانید دستی هم مقایسه کنید.
+
+> [!NOTE]
+> در نصب مستقیم، اندروید ممکن است بگوید «برنامه ناامن است». این را گوگل برای هر اپی که از بیرون فروشگاهش نصب شود می‌گوید و ربطی به سالم‌بودن فایل ندارد: «جزئیات بیشتر» و بعد «به‌هرحال نصب کن». نصب از گوگل پلی این پیام را ندارد.
 
 ## کدام گوشی
 
