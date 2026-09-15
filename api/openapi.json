@@ -403,6 +403,24 @@
               }
             ],
             "title": "Expiry Minutes"
+          },
+          "channel": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "instagram",
+                  "telegram",
+                  "in_person",
+                  "website",
+                  "other"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Channel"
           }
         },
         "type": "object",

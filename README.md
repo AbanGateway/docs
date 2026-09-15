@@ -209,6 +209,8 @@ flowchart TD
 | [لینک پرداخت به دست مشتری](guides/send-link-to-customer.md) | «لینک را چطور بفرستم؟ QR دارید؟» |
 | [اعلان در گروه تلگرام](guides/telegram-group-alerts.md) | «واریزها به گروه فروشگاه هم بیاید» |
 | [اتصال آیفون](guides/iphone-shortcut.md) | «آیفون دارم، اپ اندروید به کارم نمیآید» |
+| [پنل فروشنده، بخش به بخش](guides/panel-tour.md) | «داشبورد، گزارش ها و بقیه پنل چه دارند؟» |
+| [رسید پرداخت](guides/payment-receipt.md) | «مشتری رسید میخواهد» |
 
 </div>
 
