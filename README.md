@@ -13,7 +13,7 @@
 [![API](https://img.shields.io/badge/API-v1-27E0FF?style=for-the-badge)](api/README.md)
 [![Google Play](https://img.shields.io/badge/Google_Play-install-3DDC84?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=ir.abangateway.forwarder)
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-plugin-7F54B3?style=for-the-badge&logo=woocommerce&logoColor=white)](integrations/woocommerce.md)
-[![WHMCS](https://img.shields.io/badge/WHMCS-module-1E5AA8?style=for-the-badge)](integrations/whmcs.md)
+[![WHMCS](https://img.shields.io/badge/WHMCS-module-1E5AA8?style=for-the-badge)](guides/whmcs.md)
 [![Telegram](https://img.shields.io/badge/Telegram-@Abangw__bot-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Abangw_bot)
 [![Channel](https://img.shields.io/badge/Channel-@abangateway-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/abangateway)
 
@@ -133,7 +133,7 @@ flowchart TD
 
 ### 🖥 WHMCS دارم
 
-[ماژول رسمی](integrations/whmcs.md)
+[ماژول رسمی](guides/whmcs.md)
 
 ### 🤖 ربات فروشگاهی دارم
 
@@ -145,6 +145,8 @@ flowchart TD
 ### 👨‍💻 برنامه‌نویسم
 
 [مرجع API](api/README.md)
+
+[نمونه PHP](examples/php.md) · [لاراول](integrations/laravel.md)
 
 </td>
 <td width="25%" valign="top">
@@ -182,7 +184,8 @@ flowchart TD
 | صفحه | چه چیزی |
 |---|---|
 | [ووکامرس](integrations/woocommerce.md) | نصب، تنظیمات، وضعیت سفارش، عیب‌یابی |
-| [WHMCS](integrations/whmcs.md) | فاکتور هاست و سرور با کارت به کارت؛ تایید خودکار و فعال شدن سرویس |
+| [WHMCS](guides/whmcs.md) | فاکتور هاست و سرور با کارت به کارت؛ تایید خودکار و فعال شدن سرویس |
+| [لاراول](integrations/laravel.md) | بسته رسمی: یک خط نصب، مسیر آماده وبهوک و رویداد پرداخت |
 | [DDbot](integrations/ddbot.md) | ربات فروشگاهی تلگرام، بدون نصب چیزی روی سرور شما |
 | [میرزا آپدیت‌شده](integrations/mirza-pro.md) | آبان گیت وی داخل خود ربات؛ یک آدرس و یک کلید |
 | [میرزا قدیمی](integrations/mirza.md) | نسخه‌های قدیمی‌تر، به‌عنوان درگاه سفارشی |
@@ -195,7 +198,7 @@ flowchart TD
 
 ### 💻 نمونه‌کد
 
-[**PHP**](examples/php.md) · [**Python**](examples/python.md) · [**curl**](examples/curl.md)
+[**PHP**](examples/php.md) · [**لاراول**](integrations/laravel.md) · [**Python**](examples/python.md) · [**curl**](examples/curl.md)
 
 هر سه یک چرخه‌ی کامل‌اند: بساز، وبهوک را بشنو، سفارش را تحویل بده.
 

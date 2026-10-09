@@ -1,11 +1,72 @@
 # نمونه‌ی PHP
 
-یک اتصال کامل، بدون هیچ کتابخانه‌ای. سه فایل: ساخت فاکتور، دریافت وبهوک، تحویل سفارش.
+دو راه دارد: بسته رسمی، که پیشنهاد ما است، یا همان کار بدون هیچ کتابخانه ای. برای لاراول، [راهنمای لاراول](../integrations/laravel.md) را ببینید.
 
 > [!NOTE]
 > توکن‌ها و کلیدهای این صفحه ساختگی‌اند. مال خودتان را از متغیر محیطی بخوانید، نه از کد.
 
-## ۱. ساخت فاکتور
+## با بسته رسمی
+
+```bash
+composer require abangateway/abangateway-php-package
+```
+
+PHP 7.4 به بالا، فقط با cURL. ساخت فاکتور:
+
+```php
+<?php
+use AbanGateway\Client;
+
+$aban = new Client(getenv('ABAN_TOKEN'));
+
+$invoice = $aban->invoiceForOrder('ORD-1043', [
+    'amount_rial'  => 5990000,
+    'callback_url' => 'https://shop.example/abangate/hook.php',
+    'return_url'   => 'https://shop.example/order/1043',
+]);
+
+if ($invoice->isPaid()) {
+    exit('این سفارش قبلا پرداخت شده');
+}
+header('Location: ' . $invoice->paymentUrl);
+```
+
+`invoiceForOrder` اگر فاکتور قبلی سفارش منقضی شده باشد یا مبلغ عوض شده باشد، فاکتور تازه میسازد، و سفارش پرداخت شده را دوباره نمیفروشد.
+
+وبهوک:
+
+```php
+<?php
+// hook.php
+use AbanGateway\Webhook;
+use AbanGateway\Exception\SignatureVerificationException;
+
+try {
+    $event = Webhook::parse(
+        file_get_contents('php://input'),
+        $_SERVER['HTTP_X_SIGNATURE'] ?? '',
+        getenv('ABAN_WEBHOOK_SECRET')
+    );
+} catch (SignatureVerificationException $e) {
+    http_response_code(401);
+    exit;
+}
+
+// وضعیت را از API بپرسید، نه از بدنه وبهوک.
+$invoice = Webhook::confirm($aban, $event);
+if ($invoice->isPaid()) {
+    deliver_once($invoice->baseOrderId());
+}
+http_response_code(200);
+```
+
+خطاها کلاس جدا و کد خود API را دارند، مثلا `$e->getErrorCode()` برابر `insufficient_fee_wallet`. جزئیات در [README بسته](https://github.com/AbanGateway/abangateway-php-package).
+
+## بدون کتابخانه
+
+همان اتصال، با cURL خام. سه فایل: ساخت فاکتور، دریافت وبهوک، تحویل سفارش.
+
+### ۱. ساخت فاکتور
 
 ```php
 <?php
@@ -49,7 +110,7 @@ save_invoice_id('ORD-1043', $invoice['invoice_id']);
 header('Location: ' . $invoice['payment_url']);
 ```
 
-## ۲. دریافت وبهوک
+### ۲. دریافت وبهوک
 
 ```php
 <?php
@@ -82,7 +143,7 @@ enqueue_fulfilment($event['invoice_id'], $event['order_id']);
 http_response_code(200);
 ```
 
-## ۳. تحویل سفارش
+### ۳. تحویل سفارش
 
 ```php
 <?php
