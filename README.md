@@ -13,6 +13,7 @@
 [![API](https://img.shields.io/badge/API-v1-27E0FF?style=for-the-badge)](api/README.md)
 [![Google Play](https://img.shields.io/badge/Google_Play-install-3DDC84?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=ir.abangateway.forwarder)
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-plugin-7F54B3?style=for-the-badge&logo=woocommerce&logoColor=white)](integrations/woocommerce.md)
+[![WHMCS](https://img.shields.io/badge/WHMCS-module-1E5AA8?style=for-the-badge)](integrations/whmcs.md)
 [![Telegram](https://img.shields.io/badge/Telegram-@Abangw__bot-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Abangw_bot)
 [![Channel](https://img.shields.io/badge/Channel-@abangateway-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/abangateway)
 
@@ -130,6 +131,10 @@ flowchart TD
 
 [افزونه‌ی رسمی](integrations/woocommerce.md)
 
+### 🖥 WHMCS دارم
+
+[ماژول رسمی](integrations/whmcs.md)
+
 ### 🤖 ربات فروشگاهی دارم
 
 [DDbot](integrations/ddbot.md) · [میرزا آپدیت‌شده](integrations/mirza-pro.md) · [میرزا قدیمی](integrations/mirza.md) · [فاکسیما](integrations/faoxima.md) · [ویزویز](integrations/wizwiz.md)
@@ -177,6 +182,7 @@ flowchart TD
 | صفحه | چه چیزی |
 |---|---|
 | [ووکامرس](integrations/woocommerce.md) | نصب، تنظیمات، وضعیت سفارش، عیب‌یابی |
+| [WHMCS](integrations/whmcs.md) | فاکتور هاست و سرور با کارت به کارت؛ تایید خودکار و فعال شدن سرویس |
 | [DDbot](integrations/ddbot.md) | ربات فروشگاهی تلگرام، بدون نصب چیزی روی سرور شما |
 | [میرزا آپدیت‌شده](integrations/mirza-pro.md) | آبان گیت وی داخل خود ربات؛ یک آدرس و یک کلید |
 | [میرزا قدیمی](integrations/mirza.md) | نسخه‌های قدیمی‌تر، به‌عنوان درگاه سفارشی |
