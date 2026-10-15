@@ -137,7 +137,7 @@ flowchart TD
 
 ### 🤖 ربات فروشگاهی دارم
 
-[DDbot](integrations/ddbot.md) · [میرزا آپدیت‌شده](integrations/mirza-pro.md) · [میرزا قدیمی](integrations/mirza.md) · [فاکسیما](integrations/faoxima.md) · [ویزویز](integrations/wizwiz.md)
+[DDbot](integrations/ddbot.md) · [میرزا آپدیت‌شده](integrations/mirza-pro.md) · [میرزا اشتراکی](integrations/mirza.md) · [فاکسیما](integrations/faoxima.md) · [ویزویز](integrations/wizwiz.md)
 
 </td>
 <td width="25%" valign="top">
@@ -188,7 +188,7 @@ flowchart TD
 | [لاراول](integrations/laravel.md) | بسته رسمی: یک خط نصب، مسیر آماده وبهوک و رویداد پرداخت |
 | [DDbot](integrations/ddbot.md) | ربات فروشگاهی تلگرام، بدون نصب چیزی روی سرور شما |
 | [میرزا آپدیت‌شده](integrations/mirza-pro.md) | آبان گیت وی داخل خود ربات؛ یک آدرس و یک کلید |
-| [میرزا قدیمی](integrations/mirza.md) | نسخه‌های قدیمی‌تر، به‌عنوان درگاه سفارشی |
+| [میرزا اشتراکی](integrations/mirza.md) | نسخه اشتراکی میرزا، به عنوان درگاه سفارشی |
 | [فاکسیما](integrations/faoxima.md) | درگاه ما داخل خود فاکسیماست: دو مقدار در پنل مدیریت ربات؛ نصب کننده فقط برای نسخه های زیر ۱٫۰ |
 | [ویزویز](integrations/wizwiz.md) | ربات ویزویز روی سرور خودتان، جای درگاه NowPayments |
 | [لینک پرداخت](integrations/payment-links.md) | بدون کد، برای فروش در اینستاگرام و تلگرام |
