@@ -421,6 +421,18 @@
               }
             ],
             "title": "Channel"
+          },
+          "agent": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 32
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Agent"
           }
         },
         "type": "object",
@@ -558,6 +570,17 @@
           "is_test": {
             "type": "boolean",
             "title": "Is Test"
+          },
+          "agent": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Agent"
           }
         },
         "type": "object",
