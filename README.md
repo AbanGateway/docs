@@ -12,6 +12,7 @@
 [![status](https://img.shields.io/badge/status-live-0f7a4d?style=for-the-badge)](https://abangateway.ir/status)
 [![API](https://img.shields.io/badge/API-v1-27E0FF?style=for-the-badge)](api/README.md)
 [![Google Play](https://img.shields.io/badge/Google_Play-install-3DDC84?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=ir.abangateway.forwarder)
+[![iPhone](https://img.shields.io/badge/iPhone-Shortcuts-111111?style=for-the-badge&logo=apple&logoColor=white)](guides/iphone-shortcut.md)
 [![WooCommerce](https://img.shields.io/badge/WooCommerce-plugin-7F54B3?style=for-the-badge&logo=woocommerce&logoColor=white)](integrations/woocommerce.md)
 [![WHMCS](https://img.shields.io/badge/WHMCS-module-1E5AA8?style=for-the-badge)](guides/whmcs.md)
 [![Telegram](https://img.shields.io/badge/Telegram-@Abangw__bot-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Abangw_bot)
@@ -73,7 +74,16 @@ flowchart TD
 
 ---
 
-## 🆕 دو راه پرداخت، نه یکی
+## 🆕 تازه ها
+
+- 📱 **آیفون روی iOS 27.** دو نسخه تازه شورتکات: با اینترنت، و بدون اینترنت که پیامک بانک را با پیامک میفرستد. «🏦 بانک های من» هم فقط پیامک بانک هایی را نگه میدارد که فروشنده انتخاب کرده. [اتصال آیفون ←](guides/iphone-shortcut.md)
+- 🤝 **نمایندگی درگاه.** برای فروشنده ای که نماینده زیرمجموعه دارد: پول همه فروش ها به کارت خود فروشنده میرسد و هر پرداخت معلوم است از کدام نماینده آمده. [نمایندگی درگاه ←](guides/agency.md)
+- 🛡 **نماد اعتماد آبان.** نشانی که به خریدار میگوید هویت صاحب فروشگاه تایید شده و کارت مقصد به نام خود اوست. روی صفحه پرداخت دیده میشود و برای سایت هم نماد قابل نصب دارد. [نماد اعتماد ←](guides/trust-mark.md)
+- 💱 **لینک ارزی.** لینکی برای «۲ تتر» یا «یک ربع سکه» که مبلغ تومانی اش را نرخ لحظه پرداخت تعیین میکند. [لینک ارزی ←](guides/fx-link.md)
+
+---
+
+## 💳 دو راه پرداخت، نه یکی
 
 شبا و شماره حساب کارتتان را هم می‌شود ثبت کرد. اگر ثبت کنید، صفحه‌ی پرداخت راه دومی جلوی خریدار می‌گذارد: **یک انتقال آنی با پل**، به‌جای کارت به کارت.
 
@@ -154,6 +164,10 @@ flowchart TD
 ### 🌱 تازه‌ام
 
 [از صفر تا اولین پرداخت](guides/start.md)
+
+### 📱 گوشی فروشنده
+
+[اپ اندروید](integrations/forwarder-app.md) · [آیفون](guides/iphone-shortcut.md)
 
 </td>
 </tr>
