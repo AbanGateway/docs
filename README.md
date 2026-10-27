@@ -11,12 +11,7 @@
 [![website](https://img.shields.io/badge/website-abangateway.ir-1F6FEB?style=for-the-badge)](https://abangateway.ir)
 [![status](https://img.shields.io/badge/status-live-0f7a4d?style=for-the-badge)](https://abangateway.ir/status)
 [![API](https://img.shields.io/badge/API-v1-27E0FF?style=for-the-badge)](api/README.md)
-[![Google Play](https://img.shields.io/badge/Google_Play-install-3DDC84?style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=ir.abangateway.forwarder)
-[![iPhone](https://img.shields.io/badge/iPhone-Shortcuts-111111?style=for-the-badge&logo=apple&logoColor=white)](guides/iphone-shortcut.md)
-[![WooCommerce](https://img.shields.io/badge/WooCommerce-plugin-7F54B3?style=for-the-badge&logo=woocommerce&logoColor=white)](integrations/woocommerce.md)
-[![WHMCS](https://img.shields.io/badge/WHMCS-module-1E5AA8?style=for-the-badge)](guides/whmcs.md)
 [![Telegram](https://img.shields.io/badge/Telegram-@Abangw__bot-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Abangw_bot)
-[![Channel](https://img.shields.io/badge/Channel-@abangateway-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/abangateway)
 
 </div>
 
@@ -49,32 +44,19 @@ curl -X POST https://api.abangateway.ir/api/v1/invoices \
 
 هر فاکتور یک مبلغ **منحصربه‌فرد** می‌گیرد — چند ریال بیشتر از مبلغ سفارش. آن اختلاف تصادفی تنها چیزی است که واریز این خریدار را از واریز همزمان یک نفر دیگر جدا می‌کند.
 
-<!-- Top-down, not right-to-left. RTL matched the language and was the first
-     choice, but seven nodes on one horizontal line render as an unreadable
-     strip of thumbnails on GitHub. A vertical flow gives each step the full
-     column width, which is what actually makes it legible. -->
-```mermaid
-flowchart TD
-    A["🛒 خریدار سفارش می‌دهد"]
-    B["🧾 فاکتور با یک مبلغ منحصربه‌فرد ساخته می‌شود"]
-    C["💳 خریدار کارت به کارت می‌کند — مستقیم به کارت شما"]
-    D["🏦 بانک به گوشی شما پیامک می‌زند"]
-    E["📱 اپ فورواردر پیامک را به سرور می‌رساند"]
-    F["🔎 سرور مبلغ را می‌خواند و به فاکتور می‌چسباند"]
-    G["✅ وبهوک می‌آید — سفارش تحویل می‌شود"]
-
-    A --> B --> C --> D --> E --> F --> G
-
-    style C fill:#0e2547,stroke:#27E0FF,stroke-width:2px,color:#e9f1fb
-    style F fill:#0e2547,stroke:#27E0FF,stroke-width:2px,color:#e9f1fb
-    style G fill:#0b2b1e,stroke:#33e39b,stroke-width:2px,color:#e9f1fb
-```
+<!-- A drawn image, not mermaid. GitHub draws mermaid in its own font, so the
+     Persian came out in a fallback face, and the seven boxes made a column
+     most of a screen tall. The source is infra/docs-how-it-works.html in the
+     main repo; it rebuilds this file. -->
+![پنج قدم از راست به چپ: فاکتور با یک مبلغ یکتا ساخته میشود، خریدار مستقیم به کارت شما کارت به کارت میکند، بانک به گوشی شما پیامک میزند، اپ اندروید یا شورتکات آیفون پیامک را میفرستد، مبلغ با فاکتور تطبیق میخورد و وبهوک میرسد](assets/how-it-works.png)
 
 پول در هیچ مرحله‌ای دست ما نیست. کارمزد از یک کیف پول جدا کم می‌شود که خودتان شارژ می‌کنید.
 
 ---
 
-## 🆕 تازه ها
+<!-- ✨, not 🆕: the squared NEW counts as a Latin letter, so GitHub's dir="auto"
+     turned this one heading left-to-right. -->
+## ✨ تازه ها
 
 - 📱 **آیفون روی iOS 27.** دو نسخه تازه شورتکات: با اینترنت، و بدون اینترنت که پیامک بانک را با پیامک میفرستد. «🏦 بانک های من» هم فقط پیامک بانک هایی را نگه میدارد که فروشنده انتخاب کرده. [اتصال آیفون ←](guides/iphone-shortcut.md)
 - 🤝 **نمایندگی درگاه.** برای فروشنده ای که نماینده زیرمجموعه دارد: پول همه فروش ها به کارت خود فروشنده میرسد و هر پرداخت معلوم است از کدام نماینده آمده. [نمایندگی درگاه ←](guides/agency.md)
@@ -89,7 +71,7 @@ flowchart TD
 
 <div align="center">
 
-![جعبه‌ی انتقال با پل روی صفحه‌ی پرداخت: شبا، شماره حساب و مبلغ یک‌جا](assets/pay-pol.png)
+<img src="assets/pay-pol.png" width="420" alt="جعبه انتقال با پل روی صفحه پرداخت: شبا، شماره حساب و مبلغ یکجا">
 
 </div>
 
@@ -127,47 +109,42 @@ flowchart TD
 
 <table dir="rtl">
 <tr>
-<td width="25%" valign="top">
+<td width="33%" valign="top">
 
-### 🛍 فروشنده‌ام
-سایت ندارم
-
-[لینک پرداخت](integrations/payment-links.md)
+**🛍 سایت ندارم**<br>
+[لینک پرداخت](integrations/payment-links.md)، برای اینستاگرام و تلگرام
 
 </td>
-<td width="25%" valign="top">
+<td width="33%" valign="top">
 
-### 🟣 ووکامرس دارم
-
-[افزونه‌ی رسمی](integrations/woocommerce.md)
-
-### 🖥 WHMCS دارم
-
-[ماژول رسمی](guides/whmcs.md)
-
-### 🤖 ربات فروشگاهی دارم
-
-[DDbot](integrations/ddbot.md) · [میرزا آپدیت‌شده](integrations/mirza-pro.md) · [میرزا اشتراکی](integrations/mirza.md) · [فاکسیما](integrations/faoxima.md) · [ویزویز](integrations/wizwiz.md)
+**🌐 سایت دارم**<br>
+[ووکامرس](integrations/woocommerce.md) · [WHMCS](guides/whmcs.md) · [لاراول](integrations/laravel.md)
 
 </td>
-<td width="25%" valign="top">
+<td width="33%" valign="top">
 
-### 👨‍💻 برنامه‌نویسم
-
-[مرجع API](api/README.md)
-
-[نمونه PHP](examples/php.md) · [لاراول](integrations/laravel.md)
+**🤖 ربات فروشگاهی دارم**<br>
+[DDbot](integrations/ddbot.md) · [میرزا آپدیت شده](integrations/mirza-pro.md) · [میرزا اشتراکی](integrations/mirza.md) · [فاکسیما](integrations/faoxima.md) · [ویزویز](integrations/wizwiz.md)
 
 </td>
-<td width="25%" valign="top">
+</tr>
+<tr>
+<td valign="top">
 
-### 🌱 تازه‌ام
+**👨‍💻 برنامه نویسم**<br>
+[مرجع API](api/README.md) · [نمونه PHP](examples/php.md)
 
-[از صفر تا اولین پرداخت](guides/start.md)
+</td>
+<td valign="top">
 
-### 📱 گوشی فروشنده
-
+**📱 گوشی فروشنده**<br>
 [اپ اندروید](integrations/forwarder-app.md) · [آیفون](guides/iphone-shortcut.md)
+
+</td>
+<td valign="top">
+
+**🌱 تازه ام**<br>
+[از صفر تا اولین پرداخت](guides/start.md)
 
 </td>
 </tr>
@@ -177,7 +154,7 @@ flowchart TD
 
 ## 📚 فهرست کامل
 
-### 🔌 API
+### 🔌 مرجع API
 
 <div dir="rtl">
 
