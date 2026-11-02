@@ -336,7 +336,7 @@
             "type": "integer",
             "exclusiveMinimum": 0.0,
             "title": "Amount Rial",
-            "description": "Amount in Rial"
+            "description": "Amount in Rial, a whole number of Toman"
           },
           "order_id": {
             "anyOf": [
