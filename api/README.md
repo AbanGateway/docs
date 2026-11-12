@@ -15,7 +15,7 @@ https://api.abangateway.ir
 
 ## احراز هویت
 
-توکن را از پنل می‌سازید: **تنظیمات ← توکن‌های API**. در هدر `Authorization` می‌آید:
+توکن را از پنل می‌سازید: **افزونه ها و اتصال، بخش «کلیدها»**. در هدر `Authorization` می‌آید:
 
 ```
 Authorization: Bearer ag_live_xxxx…xxxx
